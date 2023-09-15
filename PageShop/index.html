@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+
+<div class="pageContainer">
+
+    <div class="top">
+
+        <div class="options">
+            <div class="pageName"><p>Shoesy</p></div>
+            <div class="search">
+                <input type="text" placeholder="Search..">
+                <div class="searchIcon">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+            </div>
+            <div class="topIcons">
+                 <div class="login">
+                    <span class="material-symbols-outlined">person</span>
+                 </div>
+                 <div class="basket">
+                    <span class="material-symbols-outlined">shopping_basket</span>
+                 </div>
+            </div>
+        </div>
+        
+        <div class="logo"><img src="logo.jpg">
+            <div class="item">
+                 <span class="motto">MAKE YOUR OWN STYLE</span>
+                 
+            </div>
+            
+        </div>
+        <div class="productCategory">
+            <div class="cat">Shoes</div>
+            <div class="cat">Jackets</div>
+            <div class="cat">Trousers</div>
+            <div class="cat">Hats</div>
+            <div class="cat">Other</div>
+        </div>
+    </div>
+    <div id="galleryOpen"class="gallery">
+        <span class="material-symbols-outlined" id="close" onclick="closeGallery()">close</span>
+        <img class="galleryContent" id="galleryPhoto">
+    </div>
+    <div class="mid">
+
+        <div class="filter">
+             <ul class="Sort"><span>Sort by</span></ul>
+             <ol class="optSort"></ol>
+             <ol class="optSort"></ol>
+             <ol class="optSort"></ol>
+             <ol class="optSort"></ol>
+        </div>
+
+        <div class="leftCategories"></div>
+
+        <div class="products">
+            <div class="prod p1">
+                <div class="photo">
+                     <div class="slider">
+                         <img  class="slide1 slide active" src="shoes/balance1.jpg" onclick="openWindow(this);"/>
+                         <img  class="slide2 slide" src="shoes/balance2.jpg" onclick="openWindow(this);" />
+                         <img  class="slide3 slide" src="shoes/balance3.jpg" onclick="openWindow(this);"/>
+                     </div>
+                        <span id='arrowLeft'class="material-symbols-outlined">navigate_before</span>
+                        <span id='arrowRight'class="material-symbols-outlined">chevron_right </span>   
+ 
+                </div>
+                <div class="name">
+                    <span>NEW BALANCE</span>
+                    <i>YK570LB3 Black</i>
+                </div>
+                <div class="shop">
+                    <div class="cost">239$</div>
+                    <div class="buy">
+                        <span class="material-symbols-outlined">BUY shopping_cart</span>
+                    </div>
+               </div>
+            </div>
+            <div class="prod p1">
+                <div class="photo">
+                    <div class="slider">
+                         <img class="slide1 slide active" src="shoes/adidas1.jpg"onclick="openWindow(this);"/>
+                         <img class="slide2 slide" src="shoes/adidas2.jpg" onclick="openWindow(this);"/>
+                         <img class="slide3 slide" src="shoes/adidas3.jpg"onclick="openWindow(this);" />
+                    </div>
+                         <span id='arrowLeft'class="material-symbols-outlined">navigate_before</span>
+                         <span id='arrowRight'class="material-symbols-outlined">chevron_right </span>
+                </div>
+                <div class="name">
+                    <span>ADIDAS</span>
+                    <i>Gazelle C BY9548 Icepnk/Ftwwht/Goldmt</i>
+                </div>
+                <div class="shop">
+                    <div class="cost">129$</div>
+                    <div class="buy">
+                        <span class="material-symbols-outlined">Buy shopping_cart</span>
+                    </div>
+               </div>
+            </div>
+            <div class="prod p3">
+                <div class="photo">
+                    <div class="slider">
+                         <img id="slide1" class="slide active" src="shoes/mizuno1.jpg"onclick="openWindow(this);"/>
+                         <img id="slide2" class="slide" src="shoes/mizuno2.jpg" onclick="openWindow(this);"/>
+                         <img id="slide3" class="slide" src="shoes/mizuno3.jpg"onclick="openWindow(this);" />
+                    </div>
+                    <span id='arrowLeft'class="material-symbols-outlined">navigate_before</span>
+                        <span id='arrowRight'class="material-symbols-outlined">chevron_right </span>
+                </div>
+                <div class="name">
+                    <span>MIZUNO</span>
+                    <i>Wave Neo Wind J1GC227801 White</i>
+                </div>
+                <div class="shop">
+                    <div class="cost">549$</div>
+                    <div class="buy">
+                        <span class="material-symbols-outlined">Buy shopping_cart</span>
+                    </div>
+               </div>
+            </div>
+            <div class="prod p4">
+                <div class="photo">
+                    <div class="slider">
+                         <img id="slide1" class="slide active" src="shoes/reebok1.jpg" onclick="openWindow(this);"/>
+                         <img id="slide2" class="slide" src="shoes/reebok2.jpg"onclick="openWindow(this);" />
+                         <img id="slide3" class="slide" src="shoes/reebok3.jpg" onclick="openWindow(this);"/>
+                    </div>
+                    <span id='arrowLeft'class="material-symbols-outlined">navigate_before</span>
+                        <span id='arrowRight'class="material-symbols-outlined">chevron_right </span>
+                </div>
+                <div class="name">
+                    <span>REEBOK</span>
+                    <i>Classic Leather GY1542 Cblack/Cblack/Purgry</i>
+                </div>
+                <div class="shop">
+                    <div class="cost">199$</div>
+                    <div class="buy">
+                        <span class="material-symbols-outlined">Buy shopping_cart</span>
+                    </div>
+               </div>
+            </div>
+            <div class="prod p5">
+                <div class="photo">
+                    <div class="slider">
+                         <img id="slide1" class="slide active" src="shoes/nike1.jpg" onclick="openWindow(this);"/>
+                         <img id="slide2" class="slide" src="shoes/nike2.jpg"onclick="openWindow(this);" />
+                         <img id="slide3" class="slide" src="shoes/nike3.jpg"onclick="openWindow(this);" />
+                    </div>
+                    <span id='arrowLeft'class="material-symbols-outlined">navigate_before</span>
+                        <span id='arrowRight'class="material-symbols-outlined">chevron_right </span>
+                </div>
+                <div class="name">
+                    <span>NIKE</span>
+                    <i>Air Max Ltd 3 CZ7554 001 Smoke Grey/White/Black</i>
+                </div>
+                <div class="shop">
+                    <div class="cost">429$</div>
+                    <div class="buy">
+                        <span class="material-symbols-outlined">Buy shopping_cart</span>
+                    </div>
+               </div>
+            </div>
+            <div class="prod p6">
+                <div class="photo">
+                    <div class="slider">
+                         <img id="slide1" class="slide active" src="shoes/nike4.jpg" onclick="openWindow(this);"/>
+                         <img id="slide2" class="slide" src="shoes/nike5.jpg" onclick="openWindow(this);"/>
+                          <img id="slide3" class="slide" src="shoes/nike6.jpg" onclick="openWindow(this);"/>
+                    </div>
+                    <span id='arrowLeft'class="material-symbols-outlined">navigate_before</span>
+                        <span id='arrowRight'class="material-symbols-outlined">chevron_right </span>
+                </div>
+                <div class="name">
+                    <span>NIKE</span>
+                    <i>Air Max Sc CW4555 003 Black/Black/Black</i>
+                </div>
+                <div class="shop">
+                    <div class="cost">79$</div>
+                    <div class="buy">
+                        <span class="material-symbols-outlined">Buy shopping_cart</span>
+                    </div>
+               </div>
+            </div>
+            <div class="prod p7">
+                <div class="photo">
+                    <div class="slider">
+                         <img id="slide1" class="slide active" src="shoes/adidas4.jpg" onclick="openWindow(this);"/>
+                         <img id="slide2" class="slide" src="shoes/adidas5.jpg" onclick="openWindow(this);"/>
+                         <img id="slide3" class="slide" src="shoes/adidas6.jpg"onclick="openWindow(this);" />
+                    </div>
+                    <span id='arrowLeft'class="material-symbols-outlined">navigate_before</span>
+                        <span id='arrowRight'class="material-symbols-outlined">chevron_right </span>
+                </div>
+                <div class="name">
+                    <span>ADIDAS</span>
+                    <i>adizero Sl W HQ1337 Betsca/Ftwwht/Beampk</i>
+                </div>
+                <div class="shop">
+                    <div class="cost">169$</div>
+                    <div class="buy">
+                        <span class="material-symbols-outlined">Buy shopping_cart</span>
+                    </div>
+               </div>
+            </div>
+            <div class="prod p8">
+                <div class="photo">
+                    
+                    <div class="slider">
+                         <img id="slide1" class="slide active" src="shoes/asics1.jpg" onclick="openWindow(this);"/>
+                         <img id="slide2" class="slide" src="shoes/asics2.jpg" onclick="openWindow(this);"/>
+                         <img id="slide3" class="slide" src="shoes/asics3.jpg" onclick="openWindow(this);"/>
+                    </div>
+                    <span id='arrowLeft'class="material-symbols-outlined">navigate_before</span>
+                        <span id='arrowRight'class="material-symbols-outlined">chevron_right </span>
+                </div>
+                <div class="name">
+                    <span>ASICS</span>
+                    <i>Patriot 13 1012B312 Indigo Blue/Whisper Green 402</i>
+                </div>
+                <div class="shop">
+                     <div class="cost">99$</div>
+                     <div class="buy">
+                        <span class="material-symbols-outlined">Buy shopping_cart</span>
+                     </div>
+                </div>
+            </div>
+            <div class="prod p9">
+                <div class="photo">
+                    <div class="slider">
+                         <img id="slide1" class="slide active" src="shoes/asics4.jpg" onclick="openWindow(this);"/>
+                         <img id="slide2" class="slide" src="shoes/asics5.jpg" onclick="openWindow(this);"/>
+                         <img id="slide3" class="slide" src="shoes/asics6.jpg "onclick="openWindow(this);"/>
+                    </div>
+                    <span id='arrowLeft'class="material-symbols-outlined">navigate_before</span>
+                        <span id='arrowRight'class="material-symbols-outlined">chevron_right </span>
+                </div>
+                <div class="name">
+                    <span>ASICS</span>
+                    <i>Dynablast 3 1012B289 Fawn/Sky 701</i>
+                </div>
+                <div class="shop">
+                    <div class="cost">329$</div>
+                    <div class="buy">
+                        <span class="material-symbols-outlined">BUY shopping_cart</span>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    
+</div>
+
+<script src="apps.js"></script>
+</body>
+</html>
